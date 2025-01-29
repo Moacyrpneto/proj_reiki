@@ -1,0 +1,70 @@
+body {
+    font-family: "exo 2", sans-serif;
+}
+
+.navbar {
+    background-color:#b6daac;
+    border-bottom: px solid #70aa6260;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: rgba(104, 165, 89, 0.767);
+    color: black
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: black;
+}
+
+#sobre-o-reiki,
+#agendamento {  
+    background-color: #70aa6260;
+}
+
+.linha {
+    border-bottom: 2px solid #303030b9;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.text-colored {
+    color: black;
+}
+
+.btn-custom {
+    background-color:rgb(104, 165, 89);
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: rgb(53, 95, 43);
+}
+
+@media (max-width: 767px) {
+
+    #regras .btn {
+        margin-left: 8px;
+    }
+    
+    .carousel-item img,
+    .carousel-item video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;  /* Se necessário para ajustar o tamanho */
+        height: auto;  /* Para manter a proporção */
+    }
+    
+    #regras .btn {
+        margin-left: 8px;
+    }
+}
