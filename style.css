@@ -19,7 +19,8 @@ body {
 }
 
 #sobre-o-reiki,
-#agendamento {  
+#agendamento, 
+.footer {  
     background-color: #70aa6260;
 }
 
@@ -81,6 +82,8 @@ body {
 .parceria img {
     width: 300px
 }
+
+
 
 @media (max-width: 767px) {
     

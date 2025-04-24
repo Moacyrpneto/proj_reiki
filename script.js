@@ -36,3 +36,22 @@ document.getElementById("feedbackForm").addEventListener("submit", function(even
 
     document.getElementById("feedbackForm").reset();
 });
+
+//configurando o email para mobile e navegador
+
+function abrirEmail() {
+    const assunto = encodeURIComponent("Quero participar como reikiano");
+    const corpo = encodeURIComponent("Olá! Gostaria de saber como posso participar como terapeuta.");
+    const email = "fraternoreiki@gmail.com";
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // Mobile: Abre o app de e-mail
+        window.location.href = `mailto:${email}?subject=${assunto}&body=${corpo}`;
+    } else {
+        // Desktop: Abre o Gmail no navegador
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${assunto}&body=${corpo}`;
+        window.open(gmailUrl, '_blank');
+    }
+}
